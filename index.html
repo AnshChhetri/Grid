@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid | Curated Student Tech</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500&display=swap');
+
+  :root {
+    --color-text-primary: #000;
+    --color-text-secondary: #666;
+    --color-background-primary: #fff;
+    --color-background-tertiary: #f4f4f4;
+    --color-border-primary: #000;
+    --color-border-secondary: #ddd;
+    --color-border-tertiary: #eee;
+    --border-radius-lg: 12px;
+    --border-radius-md: 8px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  .g-root {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--color-text-primary);
+    background: var(--color-background-tertiary);
+    min-height: 100vh;
+  }
+
+  .g-nav {
+    background: var(--color-background-primary);
+    border-bottom: 0.5px solid var(--color-border-tertiary);
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .g-logo { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 900; letter-spacing: -0.5px; }
+  .g-logo span { display: inline-block; width: 8px; height: 8px; background: #D85A30; border-radius: 50%; margin-left: 2px; }
+
+  .g-nav-links { display: flex; gap: 20px; list-style: none; }
+  .g-nav-links a { font-size: 13px; color: var(--color-text-secondary); text-decoration: none; font-weight: 500; }
+
+  .g-hero { background: var(--color-background-primary); border-bottom: 0.5px solid var(--color-border-tertiary); padding: 48px 24px 40px; text-align: center; }
+  .g-hero-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: #D85A30; margin-bottom: 12px; }
+  .g-hero h1 { font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 900; margin-bottom: 12px; }
+  
+  .g-categories { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+  .g-cat-pill { font-size: 12px; font-weight: 500; padding: 6px 14px; border-radius: 999px; border: 0.5px solid var(--color-border-secondary); background: transparent; cursor: pointer; }
+  .g-cat-pill:hover, .g-cat-pill.active { background: var(--color-text-primary); color: var(--color-background-primary); }
+
+  .g-section { max-width: 680px; margin: 0 auto; padding: 32px 16px; }
+  .g-section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 16px; }
+  .g-section-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; }
+
+  /* Comparison Table Styles */
+  .g-table-container { overflow-x: auto; margin: 20px 0; border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); background: white; }
+  .g-comparison-table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; }
+  .g-comparison-table th { background: #f9f9f9; padding: 12px; font-weight: 700; }
+  .g-comparison-table td { padding: 12px; border-top: 0.5px solid var(--color-border-tertiary); }
+  
+  .g-deal-btn { display: block; padding: 8px 12px; border-radius: var(--border-radius-md); background: #D85A30; color: #fff; font-size: 12px; text-decoration: none; text-align: center; }
+
+  .g-disclosure { font-size: 11px; color: var(--color-text-secondary); text-align: center; padding: 12px 16px 24px; max-width: 680px; margin: 0 auto; }
+</style>
+</head>
+<body>
+
+<div class="g-root">
+  <!-- Updated Navigation for Marketplace Feel -->
+  <nav class="g-nav">
+    <div class="g-logo">Grid<span></span></div>
+    <ul class="g-nav-links">
+      <li><a href="#categories">Shop by Category</a></li>
+      <li><a href="#deals">Today's Best Deals</a></li>
+      <li><a href="#compare">Compare Gear</a></li>
+    </ul>
+  </nav>
+
+  <div class="g-hero">
+    <div class="g-hero-eyebrow">Curated picks · Real reviews</div>
+    <h1>Find exactly what you need.</h1>
+    <p>Honest reviews, best-of lists, and top Amazon deals — all in one place.</p>
+  </div>
+
+  <!-- Marketplace Section Template -->
+  <div id="compare" class="g-section">
+    <div class="g-section-header">
+      <div class="g-section-title">Marketplace Comparison</div>
+    </div>
+    <!-- Your Comparison Table goes here -->
+  </div>
+
+  <div class="g-disclosure">
+    Grid is a participant in the Amazon Associates Program. Posts may contain affiliate links — if you click and buy, we earn a small commission at no extra cost to you.[cite: 1]
+  </div>
+</div>
+
+</body>
+</html>
